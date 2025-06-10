@@ -1,9 +1,63 @@
 <!DOCTYPE html>
 <html>
+  <!--Information for the inside of the page-->
   <head>
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Food Order, with JavaScript" />
+    <meta name="keywords" content="immaculata, ics2o" />
+    <meta name="author" content="Anastasiia Lebedenko" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon1/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon1/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon1/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon1/site.webmanifest" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-light_blue.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Food Order</title>
   </head>
   <body>
-    <p>Paragraph</p>
+      <main class="mdl-layout__content">
+          <table>
+          <tr>
+            <th>
+              <h1>𝓕𝓸𝓸𝓭 𝓞𝓻𝓭𝓮𝓻, 𝔀𝓲𝓽𝓱 𝓙𝓢</h1>
+            </th>
+            <th>
+              <img src="./images/cakeroll.png" alt="rectangle" width="100px" height="auto"/>
+            </th>
+          </tr>
+        </table>
+            <!-- Size (single choice) -->
+    <div class="section">
+      <div class="category-title">────୨ৎ──── Choose Your Size (Pick One) ────୨ৎ────</div>
+      <label><input type="radio" name="size" value="7.49" /> Small = $7.49 (12.7 cm in diameter)</label>
+      <label><input type="radio" name="size" value="10.00" /> Medium = $10 (17.89 cm in diameter)</label>
+    </div>
+  
+    <!-- Sauces (single choice) -->
+    <div class="section">
+      <div class="category-title"> Please select Flavor (Pick One)</div>
+      <div id="flavors"></div>
+    </div>
+
+    <!-- Cheeses (multiple choice, max 3) -->
+    <div class="section">
+      <div class="category-title"> Pick your topping!! (Max 4)</div>
+      <div id="toppings"></div>
+    </div>
+  
+    <button onclick="calculateTotal()"> 𝒞𝒶𝓁𝒸𝓊𝓁𝒶𝓉ℯ 𝓎ℴ𝓊𝓇 𝒸𝒶𝓀ℯ𝓇ℴ𝓁𝓁 ℴ𝓇𝒹ℯ𝓇 ! </button>
+  
+    <div class="totals" id="totals"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+  
+    <script src="js/script.js"></script>
   </body>
 </html>
